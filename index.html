@@ -4,8 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="icon" href="./images/Favicon.png">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <img src="./images/Logo.png">
+    </header>
+    <div class="computer">
+        <img src="./images/Robot.png">
+    </div>
+    <div class="rps">
+        <div class="choices">
+            <img src="./images/rock.png" id="rock">
+            <img src="./images/Paper.png" id="paper">
+            <img src="./images/scissors.png" id="scissors">
+        </div>
+        <div class="instructions">Choose rock, paper, or scissors!</div>
+        
+    </div>
+    <div class="score">
+        Score (first to 5):
+        <div class="human">
+            <img id="humanIcon" src="./images/player.png">
+            <div class="humanScore"></div>
+        </div>
+        <div class="robot">
+            <img id="robotIcon" src="./images/Robot.png">
+            <div class="robotScore"></div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
+
+
+<!--
+In our UI, the player should be able to play the game by clicking on buttons rather than typing their answer in a prompt.
+For now, remove the logic that plays exactly five rounds.
+Create three buttons, one for each selection. Add an event listener to the buttons that call your playRound function with the correct playerSelection every time a button is clicked. (you can keep the console.logs for this step)
+Add a div for displaying results and change all of your console.logs into DOM methods.
+Display the running score, and announce a winner of the game once one player reaches 5 points.
+You will likely have to refactor (rework/rewrite) your original code to make it work for this. That’s OK! Reworking old code is an important part of a programmer’s life.
+
+
+-->

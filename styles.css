@@ -1,0 +1,81 @@
+/* * {
+    outline: solid red;
+} */
+
+
+html, body {
+    margin: 0;           /* remove default margin */
+    padding: 0;          /* remove default padding */
+    width: 100vw;        /* full viewport width */
+    height: 100vh;       /* full viewport height */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.computer {
+    display: flex;
+    background-color: #123447;
+    font-family: "Rethink Sans", sans-serif;
+    color: white;
+    font-size: 30px;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+.rps {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: #123447;
+    gap: 30px
+}
+
+header {
+    background-color :#123447;
+    flex: 1 1 0;
+}
+
+.score {
+    background-color: #123447;
+    flex: 1 1 0;
+    text-align: center;
+    font-family: "Rethink Sans", sans-serif;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+div.rps img {
+    cursor: pointer;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    flex: 1 1 0
+}
+
+.instructions {
+    font-family: "Rethink Sans", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.human, .robot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#humanIcon, #robotIcon {
+    padding-right: 100px;
+}
